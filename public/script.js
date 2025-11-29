@@ -1,3 +1,12 @@
+
+
+document.getElementById("chatForm").addEventListener("submit", function(e) {
+    e.preventDefault();  
+    sendMessage();
+});
+
+
+
 async function sendMessage() {
   const input = document.getElementById("userInput");
   const message = input.value.trim();
